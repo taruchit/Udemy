@@ -23,11 +23,23 @@ for i in range(2,n):
         print(n," is not a prime number")
         prime=1
         break
-if(prime==-1):    
+if(prime==-1):
     print(n," is a prime number")
 
-
 print("Better approach: -")
+'''
+Let 'n' be a non prime number
+n = a * b
+a belongs to range 2 to (n-a)
+
+Let us assume 'a' be the smaller number compared to 'b'.
+
+=> a * b >= a * a
+=> n >= a * a
+=> a <= sqrt(a)
+
+
+'''
 #Time complexity: O(sqrt(n))
 prime=-1
 limit=int(math.sqrt(n))
